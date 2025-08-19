@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "ef1b91e2-0367-4386-8aff-bd49ee7a9ffd",
+		"name": "Desafio Final Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11850299"
+	},
+	"item": [
+		{
+			"name": "Criar Produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Teste\",\r\n    \"preco\": 10000.50,\r\n    \"qtd\" : 10,\r\n    \"descricao\": \"alta qualidade\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/produtos/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"produtos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Produto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Camera para Casamentos\",\r\n    \"preco\": 1400.50,\r\n    \"qtd\" : 1,\r\n    \"descricao\": \"camera de alta qualidade\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/produtos/319870",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"produtos",
+						"319870"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/produtos/721661",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"produtos",
+						"721661"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/produtos/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"produtos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by Nome Produto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/produtos/search?nome=camera",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"produtos",
+						"search"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "camera"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Count Produtos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/produtos/count",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"produtos",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by ID Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/produtos/721661",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"produtos",
+						"721661"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
